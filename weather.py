@@ -15,7 +15,7 @@ if response.status_code == 200:
     description = weather["description"]
     temperature = data["main"]["temp"]
     temp_in_celcius = round(temperature - 273)
-    system("clear")
+    system("clear")  # remove this line if you're using windows 
     print(f"{city.title()}\nWeather: {description}")
     print(f"Temperature: {temp_in_celcius}˚c")
 else:
